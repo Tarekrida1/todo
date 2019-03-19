@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#25ced1">
+    <link rel="icon" sizes="192x192" href="./resources/img/icon.png">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="resources/css/all.min.css" />
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="resources/css/style.css" />
+  </head>
+  <body>
+    <!-- start header that include input-->
+    <header>
+      <input type="text" placeholder="enter an activity.." id="item" />
+      <button id="add"><i class="far fa-calendar-plus"></i></button>
+    </header>
+    <!-- end header that include input-->
+    <!-- start all lists -->
+    <div class="lists">
+      <div class="container">
+        <div class="row">
+          <!-- start todo list -->
+          <div class="col-md-6 col-sm-12">
+            <h3>ToDo item list</h3>
+            <ul class="todo" id="todo"></ul>
+          </div>
+          <!-- end todo list -->
+          <!-- start completed list -->
+          <div class="col-md-6 col-sm-12">
+            <h3 id="com-h3">Completed item list</h3>
+            <ul class="todo" id="completed"></ul>
+          </div>
+          <!-- end completed list -->
+        </div>
+      </div>
+    </div>
+    <!-- end all lists -->
+    <script src="./resources/js/scripts.js"></script>
+  </body>
+</html>

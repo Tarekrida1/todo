@@ -1,0 +1,367 @@
+body {
+  font-family: "Tahoma", Geneva, Verdana, sans-serif;
+  background: #f8f8f8;
+  padding-top: 80px;
+}
+
+button {
+  cursor: pointer;
+}
+
+@-webkit-keyframes btnaimate {
+  from {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+  }
+}
+
+@keyframes btnaimate {
+  from {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+  }
+}
+
+@-webkit-keyframes todoanimate {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+}
+
+@keyframes todoanimate {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes completedanimate {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+  }
+}
+
+@keyframes completedanimate {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+  }
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  height: 80px;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  padding: 15px;
+  background: #25ced1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15);
+  -webkit-box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15);
+  -moz-box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15);
+  -o-box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15);
+  -ms-box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15);
+}
+
+header input {
+  width: 100%;
+  height: 50px;
+  float: left;
+  padding: 0 60px 0 18px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px 25px 25px 5px;
+  border: 0;
+  font-size: 15px;
+  font-weight: 400;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+}
+
+header input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header input::-webkit-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header input::-o-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header input::-ms-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
+  border-radius: 50%;
+  background: #fff;
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header button:focus {
+  outline: none;
+  -webkit-animation: btnaimate 0.2s;
+          animation: btnaimate 0.2s;
+}
+
+header button i {
+  font-size: 25px;
+  color: #25ced1;
+}
+
+.lists {
+  margin-top: 20px;
+}
+
+.lists h3 {
+  color: #25ced1;
+  text-align: center;
+}
+
+.lists .todo {
+  width: 100%;
+  float: left;
+  list-style: none;
+  padding: 0;
+}
+
+.lists .todo li {
+  width: 100%;
+  min-height: 50px;
+  float: left;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(44, 62, 80, 0.1);
+  -webkit-box-shadow: 0 1px 2px rgba(44, 62, 80, 0.1);
+  -moz-box-shadow: 0 1px 2px rgba(44, 62, 80, 0.1);
+  -o-box-shadow: 0 1px 2px rgba(44, 62, 80, 0.1);
+  -ms-box-shadow: 0 1px 2px rgba(44, 62, 80, 0.1);
+  margin: 5px 0;
+  line-height: 50px;
+  padding-left: 20px;
+  padding-right: 100px;
+  position: relative;
+  border: solid 1px transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-animation: todoanimate 0.6s;
+          animation: todoanimate 0.6s;
+  color: #65626b;
+}
+
+.lists .todo li:hover {
+  border: solid 1px #25ced1;
+}
+
+.lists .todo li .btns {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.lists .todo li .btns button {
+  width: 50px;
+  height: 50px;
+  appearance: none;
+  border: 0;
+  float: left;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+  position: relative;
+}
+
+.lists .todo li .btns button i {
+  font-size: 25px;
+  color: #25ced1;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.lists .todo li .btns button i:hover {
+  opacity: 1;
+  font-size: 30px;
+}
+
+.lists .todo li .btns button:focus {
+  outline: none;
+}
+
+.lists .todo li .btns button:last-of-type::before {
+  content: "";
+  width: 1px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background: #edf0f1;
+}
+
+.lists .todo li .btns .delete i {
+  color: #ff4778;
+}
+
+.lists .todo li .btns .delete i:hover {
+  color: red;
+}
+
+@media (max-width: 767px) {
+  .lists #com-h3 {
+    padding-top: 40px;
+  }
+}
+
+.lists #completed li {
+  background: #25ced1;
+  color: #edf0f1;
+  -webkit-animation: completedanimate 0.6s;
+          animation: completedanimate 0.6s;
+}
+
+.lists #completed li:hover {
+  border: solid 1px #000;
+}
+
+.lists #completed li .completed i {
+  color: #edf0f1;
+}
+
+.lists #completed .completed i {
+  opacity: 1;
+}
+
+ul.todo#todo:empty:after {
+  content: "You have nothing To-Do!";
+}
+
+ul.todo#completed:empty:after {
+  content: "You didn'n finish any task! ";
+}
+
+#todo:after,
+#completed:after {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  color: #f57789;
+}
+/*# sourceMappingURL=style.css.map */
